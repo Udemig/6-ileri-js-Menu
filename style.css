@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: 'poppins';
+}
+
+h1 {
+  font-family: 'indie flower';
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 32px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.buttons button {
+  border: 1px solid gray;
+  background: none;
+  padding: 10px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.buttons button:hover {
+  background: black;
+  color: white;
+}
+
+/* menü alanı */
+.menu-area {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 600px;
+}
+
+#card img {
+  height: 170px;
+  border-radius: 10px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-info .name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-info .name p {
+  color: green;
+}
+
+@media (max-width: 600px) {
+  #card {
+    flex-direction: column;
+  }
+  #card img {
+    width: 100%;
+    height: 250px;
+  }
+}
